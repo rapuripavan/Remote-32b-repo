@@ -1,0 +1,152 @@
+                         ================GIT===============Notes===============
+
+
+
+  git --version
+ 
+  git config --list
+
+  git config --global user.name pavan
+
+  git config --global user.emailid itsmypavan
+
+  git config --list
+
+  Q) how to remove/delete user config
+   
+  A) we cant remove the names ...only update 
+
+ 1) ls -l -----command ---list of file and directorys
+
+Create repo  :
+============
+
+    git init pavn-32b-loacal-repo
+
+    ls -l
+    
+    Create a Floder :
+    ===============
+    
+         mkdir folder1
+         
+   2) CD ---command is forword into and back to the root directery
+
+Create a Text file :
+=====================
+    
+       vi file1.txt
+
+        Esc+I = Insert
+        Esc or ctrl+c = file ending
+        :+w = save 
+        :+q = exit
+        :+wq = save and exit or ( :x )
+
+insert and exit file 
+ 
+git add file1 or (.)
+
+git commit -m "add to file " file1 (.)
+
+git status
+
+  Q)  i have a folder 
+     already same files / folders =100
+     that folder into the git repo
+
+      A) git init
+
+================20-01-2023========
+
+3) touch -----command
+
+   crated empty folder 
+   cteate a multipule files
+   update timestamp
+
+
+    touch f1 f2 f3
+   
+    git add .
+
+    git commit -m "add file" .
+
+4)  git ls-files-----all files
+
+
+5)  git log -------recent commits all
+
+
+6)  git log --oneline--------short report
+
+7)  git show ----last commit 
+
+8)  git log --author=pavan------one person work
+
+9)  unstage ----means undo stage files
+
+   git reset HEAD f14
+   
+   vi f14
+
+   git add.
+  
+   git commit -m "qqqqq" .
+
+
+
+               ======21/01/2023=========
+
+   1) Git Revert : undo a change after commit 
+
+
+  ex :  vi f1
+        add 
+        save and exit 
+       git status
+git add .
+git commit -m "mdfy f1" .
+git status
+git log --oneline
+git revert id
+
+
+
+   2)  Git Checkout :   undo a change before commit    
+
+       ex : vi f1
+	add
+	sve and exit 
+git status
+git checkout -- f1
+file will be reversed 
+
+
+   3) Git Rm :  can remove / delete files or directiry 
+
+	git rm fi
+	git status
+	git commit -m "delete fi" .
+	check all 
+	ls -l
+	git status
+	git ls-files
+	git log --oneline
+	git revert ifno
+	
+	!) do not commit delete 
+	git reset HEAD fi
+	there is showing only commmit area..there is no file in working directry
+	git checkout -- fi
+	showing all
+
+
+
+	=========23/01/2023===============
+
+  	git hub login : create
+	
+	URL : https://github.com/rapuripavan/Remoto-32b-repo.git
+
+	
